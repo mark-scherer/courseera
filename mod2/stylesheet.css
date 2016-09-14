@@ -1,0 +1,9 @@
+h1, h2, p {
+	font-family: "Verdana";
+}
+
+h1 {
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
