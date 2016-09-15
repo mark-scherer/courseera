@@ -1,3 +1,14 @@
+* {
+	box-sizing: border-box;
+	color: black;
+}
+
+body {
+	margin: 0px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
 h1, h2, p {
 	font-family: "Verdana";
 }
@@ -6,4 +17,84 @@ h1 {
 	font-size: 30px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
+}
+
+.container {
+	margin-top: 100px;
+	width: 100%;
+	padding: 0px;
+	text-align: center;
+}
+
+.food {
+	width: 30%;
+	background-color: gray;
+	border: 1px solid black;
+	margin: 1%;
+	padding: 0px;
+	display: inline-block;
+}
+
+h2 {
+	text-align: right;
+	border: 1px solid black;
+	float: right;
+	display: block;
+	margin: -1px -1px 0px 0px;
+	padding: 5px 40px 5px 40px;
+}
+
+p {
+	display: inline-block;
+	margin: 10px;
+	font-size: 20px
+	text-align:center;
+}
+
+#chicken {
+	background-color: red;
+}
+
+#beef {
+	background-color: blue;
+	color: white;
+}
+
+#sushi {
+	background-color: yellow;
+}
+
+#left {
+	text-align: left;
+}
+
+#first{
+	color:red;
+}
+
+/**** Large devices ****/
+@media (min-width: 992px) {
+	.food {
+		width: 30%;
+	}
+}
+
+/**** Medium devices ****/
+@media (min-width: 768px) and (max-width: 991px) {
+	.food{
+		width: 45%;
+	}
+
+	#third {
+		width: 93%;
+	}
+}
+
+/**** Small Devices ****/
+@media (max-width: 767px)
+{
+	.food{
+		width: 70%
+	}
 }
